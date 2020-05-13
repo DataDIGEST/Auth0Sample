@@ -14,7 +14,7 @@ import "./NavMenu.css";
 import { useAuth0 } from "../react-auth0-spa";
 
 export const NavMenu = () => {
-  const { user, isAuthenticated, loginWithRedirect, logout } = useAuth0();
+  const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
   const [collapsed, setCollapsed] = useState(true);
 
   const toggleNavbar = () => {
