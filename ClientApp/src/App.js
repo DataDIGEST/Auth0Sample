@@ -7,12 +7,9 @@ import { Counter } from "./components/Counter";
 
 import "./custom.css";
 import PrivateRoute from "./components/common/PrivateRoute";
-import { useAuth0 } from "./react-auth0-spa";
 import { Switch } from "react-router-dom";
 
 const App = () => {
-  const { user, isAuthenticated } = useAuth0();
-
   return (
     <Layout>
       <Switch>
